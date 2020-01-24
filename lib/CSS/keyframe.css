@@ -1,0 +1,171 @@
+div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+    margin: 15px 2px;
+    padding: 5px 40px;
+    text-align: center;
+    font-weight: bolder;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* EFECTO DE FLASH */
+
+.flash:hover{
+    -moz-animation: 0.7s flash 1;
+}
+
+@-moz-keyframes flash{
+    0%, 50%, 100%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.click:hover{
+    -moz-animation: 0.7s click 1;
+}
+
+@-moz-keyframes click{
+    25%,75%{
+        -moz-transform:scale(0.8);
+    }50%{
+        -moz-transform:scale(1.1);
+    }
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+.chicle:hover{
+    -moz-animation: 1s chicle 1;
+}
+
+@-moz-keyframes chicle{
+    30%{
+        -moz-transform: scaleX(1.25);
+        -moz-transform: scaleY(0.75);
+    }40%{
+        -moz-transform: scaleX(0.65);
+        -moz-transform: scaleY(1.25);
+    }60%{
+        -moz-transform: scaleX(1.15);
+        -moz-transform: scaleY(0.85);
+    }
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+.vibrador:hover{
+    -moz-animation: 1s vibrador infinite;
+}
+
+@-moz-keyframes vibrador{
+    5%, 25%, 45%, 65%,85%{
+        -moz-transform: translateY(-10px);
+    }15%,35%, 55%, 75%, 95%{
+        -moz-transform: translateY(10px);
+    }
+
+    10%, 30%, 50%, 70%, 90%{
+        -moz-transform: translateX(-10px);
+    }20%,40%, 60%, 80%, 100%{
+        -moz-transform: translateX(10px);
+    }
+
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+.cartel:hover{
+    -moz-animation: 1s cartel 1;
+    -moz-transform-origin: top center;
+}
+
+@-moz-keyframes cartel{
+    20%{
+        -moz-transform: rotate(15deg);
+    }40%{
+        -moz-transform: rotate(-10deg);
+    }60%{
+        -moz-transform: rotate(5deg);
+    }80%{
+        -moz-transform: rotate(-3deg);
+    }
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+.balanceo:hover{
+    -moz-animation: 1s balanceo 1;
+}
+
+@-moz-keyframes balanceo{
+    20%{
+        -moz-transform: scale(0.7)
+                        rotate(-6deg);
+    }30%, 70%{
+        -moz-transform: scale(1.1)
+                        rotate(6deg)
+    }50%,90%{
+        -moz-transform: scale(1.1)
+        rotate(-6deg);
+    }
+}
+
+
+/* ///////////////////////////////////////////////////// */
+.vaiven:hover{
+    -moz-animation: 1s vaiven 1;
+}
+
+@-moz-keyframes vaiven{
+    15%{
+        -moz-transform: rotate(-10deg)
+                        translateX(-25%);
+    }30%{
+        -moz-transform: rotate(5deg) translateX(20%);
+    }45%{
+        -moz-transform: rotate(-3deg) translateX(-10%);
+    }60%{
+        -moz-transform: rotate(2deg) translateX(5%);
+    }75%{
+        -moz-transform: rotate(-1deg) translateX(-3%);
+    }
+}
+
+
+/* ///////////////////////////////////////////////////// */
+.caida{
+    -moz-animation: 1s caida 1;
+    -moz-transform-origin: top left;
+}
+
+@-moz-keyframes caida{
+    20%, 60%{
+        -moz-transform: rotate(80deg);
+    }40%{
+        -moz-transform: rotate(60deg);
+    }80%{
+        opacity: 1;
+        -moz-transform: rotate(60deg);
+    }
+    100%{
+        -moz-transform: translateY(600px);
+        opacity: 0;
+    }
+}
+
+/* ///////////////////////////////////////////////////// */
+.InRotativo{
+    -moz-animation: 1s InRotativo 1;
+}
+
+@-moz-keyframes .InRotativo{
+    
+}
